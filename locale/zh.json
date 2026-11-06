@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "分层记忆",
+    "description": "为智能体提供分层长期记忆：working（短期工作记忆）、persona（用户画像）与 fact（事实知识）三层，附带 memory_store / memory_recall / memory_export / memory_import 工具，并自动在系统提示中回放记忆摘要。"
+  }
+}

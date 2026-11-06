@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Layer Memory",
+    "description": "Layered long-term memory for the agent: working, persona, and fact layers with memory_store, memory_recall, memory_export, and memory_import tools plus automatic prompt recall."
+  }
+}

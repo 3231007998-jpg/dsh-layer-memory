@@ -1,0 +1,4 @@
+- insert:
+    - id: layer-memory
+      name: 'dsh-layer-memory'
+      config: {}

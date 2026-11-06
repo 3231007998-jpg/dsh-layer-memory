@@ -1,0 +1,51 @@
+{
+  "name": "dsh-layer-memory",
+  "version": "1.9.0",
+  "private": false,
+  "description": "Layered long-term memory for the DeepSeek Harness agent: working, persona, and fact layers with TTL/decay, scenario scopes, merge maintenance, store/recall/export/import tools, automatic prompt recall, a query-aware relevance-gated recall block, atomic write paths for long values, a management dashboard, memory import from other conversation logs, editable conversation or work-progress summaries, atomic project-handoff entries generated at the source (heuristic or model-generated), a configurable prompt digest budget, and retrospectives excluded from the automatic digest.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "memory",
+    "layer-memory"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3231007998-jpg/dsh-layer-memory.git"
+  },
+  "homepage": "https://github.com/3231007998-jpg/dsh-layer-memory#readme",
+  "bugs": {
+    "url": "https://github.com/3231007998-jpg/dsh-layer-memory/issues"
+  }
+}
